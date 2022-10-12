@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar/Navbar.js'
+import NumberButtons from './NumberButtons/NumberButtons';
 
 function App() { 
-  // loop numbers and display columns
   const numbers = [2, 8, 4, 7];
 
   return (
@@ -13,21 +12,23 @@ function App() {
       <Navbar />
 
 
-      {/* MAIN CONTENT */}
       <div className='row align-items-center h-100'>
         <div className='container h-75 w-50'>
 
-          {/* NUMBER BUTTONS */}
+
+          {/* Number Buttons */}
           <div className="container text-center h-75 bg-success">
-            <div className="row h-100">
-              <NumberButtons />
-            </div>
+
+                <NumberButtons numbers={numbers} />
+
           </div>
 
-          {/* OPERATION */}
+
+
+
           <div className="container text-center h-25 bg-info">
             
-            {/* OPERATION SYMBOLS */}
+            {/* Operation Symbols */}
             <div className="row align-items-center h-50">
               <div className="col">
                 <button type="button" className="btn btn-primary text-white w-100 h-100">
@@ -72,16 +73,6 @@ function App() {
   );
 }
 
-function NumberButtons()
-{
-  const numbers = [2, 8, 4, 7];
 
-  return numbers.map(number => (
-    <div className="col-6">
-    <button type="button" className="btn btn-primary w-100 h-100 border border-warning bg-white text-dark">{number}</button>
-  </div>
-    
-  ));
-}
 
 export default App;
