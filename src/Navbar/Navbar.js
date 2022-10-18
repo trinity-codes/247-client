@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const [tab, setTab] = useState('home');
-  console.log(tab)
 
   return (
     <div className="navbar navbar-expand-lg bg-light">
@@ -19,8 +18,8 @@ const Navbar = () => {
           </button>
         </div>
 
-        </div>
-        </div>
+      </div>
+    </div>
   );
 }
 
