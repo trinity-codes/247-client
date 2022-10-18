@@ -8,6 +8,7 @@ import Timer from './Timer/Timer';
 const numbers = [2, 8, 4, 7];
 
 function App() { 
+  // comment
   const [btn, setBtn] = useState()
   const [operator, setOperator] = useState()
   const [totals, setTotals] =useState([])
