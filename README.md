@@ -1,5 +1,10 @@
 # 247
 
+## [useEffect](https://reactjs.org/docs/hooks-effect.html) Hook
+  - The Effect Hook lets you perform side effects in function components.
+
+
+
 # git workflow
 ## steps
   1. **clone:**
