@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const NumberButtons = ({numbers, numberPressed}) => {
+const NumberButtons = ({numbers}) => {
 
   const [selected, setSelected] = useState();
 
@@ -9,7 +9,6 @@ const NumberButtons = ({numbers, numberPressed}) => {
       <div className="col-6">
         <button type="button" className={`btn btn-primary w-100 h-100 ${selected==0 ? 'active' : ''}`} onClick={() => {
           setSelected(0)
-          numberPressed(numbers[0])
           }}>
           {numbers[0]}
         </button>
@@ -18,7 +17,6 @@ const NumberButtons = ({numbers, numberPressed}) => {
       <div className="col-6">
         <button type="button" className={`btn btn-primary w-100 h-100 ${selected==1 ? 'active' : ''}`} onClick={() => {
           setSelected(1)
-          numberPressed(numbers[1])
           }}>
           {numbers[1]}
         </button>
@@ -27,8 +25,7 @@ const NumberButtons = ({numbers, numberPressed}) => {
       <div className="col-6">
           <button type="button" className={`btn btn-primary w-100 h-100 ${selected==2 ? 'active' : ''}`} onClick={() => {
             setSelected(2)
-            numberPressed(numbers[2])}
-            }>
+            }}>
             {numbers[2]}
           </button>
       </div>
@@ -36,7 +33,6 @@ const NumberButtons = ({numbers, numberPressed}) => {
       <div className="col-6">
         <button type="button" className={`btn btn-primary w-100 h-100 ${selected==3 ? 'active' : ''}`} onClick={() => {
           setSelected(3)
-          numberPressed(numbers[3])
           }}>
           {numbers[3]}
         </button>
