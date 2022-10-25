@@ -1,45 +1,62 @@
 import { useState } from 'react';
 
-const NumberButtons = ({numbers}) => {
 
-  const [selected, setSelected] = useState();
+const NumberButtons = ({ values, setValues}) => {
+
+  console.log(values);
+  // function onClick(value) {
+  //   setValues(value)
+  // }
 
   return(
-    <div className="row h-100">
-      <div className="col-6">
-        <button type="button" className={`btn btn-primary w-100 h-100 ${selected==0 ? 'active' : ''}`} onClick={() => {
-          setSelected(0)
-          }}>
-          {numbers[0]}
-        </button>
-      </div>
-
-      <div className="col-6">
-        <button type="button" className={`btn btn-primary w-100 h-100 ${selected==1 ? 'active' : ''}`} onClick={() => {
-          setSelected(1)
-          }}>
-          {numbers[1]}
-        </button>
-      </div>
-
-      <div className="col-6">
-          <button type="button" className={`btn btn-primary w-100 h-100 ${selected==2 ? 'active' : ''}`} onClick={() => {
-            setSelected(2)
-            }}>
-            {numbers[2]}
+    <div className="container text-center h-75 bg-success">
+      <div className="row h-100">
+        <div className="col-6">
+          <button
+            className={`btn btn-primary w-100 h-100`} 
+            onClick={() => {
+              // onClick(numbers[0])
+            }}
+          >
+            {values[0].start}
           </button>
-      </div>
+        </div>
 
-      <div className="col-6">
-        <button type="button" className={`btn btn-primary w-100 h-100 ${selected==3 ? 'active' : ''}`} onClick={() => {
-          setSelected(3)
-          }}>
-          {numbers[3]}
-        </button>
+        <div className="col-6">
+          <button 
+            className={`btn btn-primary w-100 h-100`} 
+            onClick={() => {
+              // onClick(numbers[1])
+            }}
+          >
+           {values[1].start}
+          </button>
+        </div>
+
+        <div className="col-6">
+            <button 
+              className={`btn btn-primary w-100 h-100`} 
+              onClick={() => {
+                // onClick(numbers[2])
+              }}
+            >
+              {values[2].start}
+            </button>
+        </div>
+
+        <div className="col-6">
+          <button 
+            className={`btn btn-primary w-100 h-100 `} 
+            onClick={() => {
+              // onClick(numbers[3])
+            }}
+          >
+            {values[3].start}
+          </button>
+        </div>
       </div>
     </div>
   );
-      
 }
 
 export default NumberButtons

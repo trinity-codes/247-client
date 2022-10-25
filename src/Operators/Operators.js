@@ -1,11 +1,11 @@
 import React from 'react';
 import icons from '../icons/icons';
 
-const Operators = () => {
+const Operators = ({setOperator}) => {
   
   function onClick(value)
   {
-    console.log(value);
+    setOperator(value)
   }
 
   return (
@@ -24,7 +24,7 @@ const Operators = () => {
             <button
               className="btn btn-primary w-100 h-100" 
               onClick={() => onClick("-")}
-             >
+            >
               {icons.minus}
             </button>
         </div>
@@ -52,6 +52,7 @@ const Operators = () => {
         <div className="col">
             <button 
               className="btn btn-primary text-white w-100 h-100"
+              onClick={() => onClick("b")}
             >
               {icons.back}
             </button>
@@ -59,6 +60,7 @@ const Operators = () => {
         <div className="col">
             <button 
               className="btn btn-primary w-100 h-100"
+              onClick={() => onClick("a")}
             >
               {icons.plusCircle}
             </button>
@@ -66,6 +68,7 @@ const Operators = () => {
         <div className="col">
             <button
               className="btn btn-primary w-100 h-100"
+              onClick={() => onClick("m")}
             >
               {icons.multipleCircle}  
             </button>
