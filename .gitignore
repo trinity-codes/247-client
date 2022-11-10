@@ -38,3 +38,8 @@ next/next-env.d.ts
 ## CRA
 
 cra/node_modules
+
+## PLAYGROUND
+playground-next/node_modules
+
+keys/
