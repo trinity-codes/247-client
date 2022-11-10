@@ -3,12 +3,12 @@
 ### Utility-First Fundamentals
 #### Building complex components from a constrained set of primitive utilities.
 - Traditionally you write your own CSS classes and use those in your HTML.
-**Why this is bad:**
+- **Why this is bad:**
 1. You waste time inventing classes
 2. Your css keeps growing and growing
 3. Making changes can break things
 - With tailwind you use *pre-existing classes*
-**Why this is good**
+- **Why this is good**
 1. You use a predefined *design system*
 2. Its *responsive*
 3. It has functionality for *state variants*. Things like hovering, focusing, disabiling
